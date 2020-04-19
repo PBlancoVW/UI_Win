@@ -1,5 +1,5 @@
 #include "pch.h"
 
-#include "MyApp.h"
+#include "App.h"
 
-CMyApp myApp;
+CApp app;

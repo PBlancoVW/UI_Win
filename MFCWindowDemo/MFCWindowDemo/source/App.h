@@ -1,6 +1,6 @@
 #pragma once
 
-class CMyApp : public CWinApp
+class CApp : public CWinApp
 {
 	BOOL InitInstance();
 };

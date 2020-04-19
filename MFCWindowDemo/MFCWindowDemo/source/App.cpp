@@ -1,10 +1,10 @@
 #include "pch.h"
 
-#include "MyApp.h"
-#include "MyFrame.h"
+#include "App.h"
+#include "Frame.h"
 
-BOOL CMyApp::InitInstance() {
-	CMyFrame* pFrame = new CMyFrame(); 
+BOOL CApp::InitInstance() {
+	CFrame* pFrame = new CFrame(); 
 	m_pMainWnd = pFrame;
 
 	pFrame->ShowWindow(SW_NORMAL);
