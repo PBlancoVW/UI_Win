@@ -1,14 +1,14 @@
 #include "pch.h"
 
 #include "App.h"
-#include "Frame.h"
+#include "Window.h"
 
 BOOL CApp::InitInstance() {
-	CFrame* pFrame = new CFrame(); 
-	m_pMainWnd = pFrame;
+	CWindow* pWindow = new CWindow();
+	m_pMainWnd = pWindow;
 
-	pFrame->ShowWindow(SW_NORMAL);
-	pFrame->UpdateWindow();
+	pWindow->ShowWindow(SW_NORMAL);
+	pWindow->UpdateWindow();
 
 	return TRUE;
 }
