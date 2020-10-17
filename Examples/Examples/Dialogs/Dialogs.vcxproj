@@ -155,16 +155,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\HelloDlg.cpp" />
     <ClCompile Include="source\App.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\pch.cpp" />
     <ClCompile Include="source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\HelloDlg.h" />
+    <ClInclude Include="source\resource.h" />
     <ClInclude Include="source\App.h" />
     <ClInclude Include="source\constants.h" />
     <ClInclude Include="source\pch.h" />
     <ClInclude Include="source\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="source\Resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

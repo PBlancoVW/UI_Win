@@ -2,6 +2,7 @@
 
 #include "Window.h"
 #include "constants.h"
+#include "HelloDlg.h"
 
 CWindow::CWindow()
 {
@@ -77,7 +78,7 @@ LRESULT CWindow::DefWindowProc(UINT nMsg, WPARAM wParam, LPARAM lParam)
 			{
 				case MenuID::NewFile:
 				{
-					MessageBox("Hit", "NewProject");
+					MessageBox("Hit", "NewFile");
 					break;
 				}
 				case MenuID::NewProject:
@@ -92,7 +93,8 @@ LRESULT CWindow::DefWindowProc(UINT nMsg, WPARAM wParam, LPARAM lParam)
 				}
 				case MenuID::DialogSimple:
 				{
-					MessageBox("Hit", "DialogSimple");
+					CHelloDlg helloDlg;
+					helloDlg.DoModal();
 					break;
 				}
 				case MenuID::DialogFromTemplate:
