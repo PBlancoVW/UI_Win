@@ -5,11 +5,15 @@ VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hello", "Examples\Books\ProgrammingWindowsWithMFC\Chapter1\Hello\Hello.vcxproj", "{BE25B060-53F2-410D-8602-364589841833}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TicTac", "Examples\Books\ProgrammingWindowsWithMFC\Chapter3\TicTac\TicTac.vcxproj", "{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{344CFDC6-F834-42A9-9007-1A7F17E36AFD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammingWindowsWithMFC", "ProgrammingWindowsWithMFC", "{6E9CF710-E9EB-4769-9F66-7BE230EAD8EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter1", "Chapter1", "{BA16B7C4-3041-454D-9727-BE2BED8433F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter3", "Chapter3", "{08FDE26E-7220-48CF-A198-7FCE2700AD9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +31,24 @@ Global
 		{BE25B060-53F2-410D-8602-364589841833}.Release|x64.Build.0 = Release|x64
 		{BE25B060-53F2-410D-8602-364589841833}.Release|x86.ActiveCfg = Release|Win32
 		{BE25B060-53F2-410D-8602-364589841833}.Release|x86.Build.0 = Release|Win32
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Debug|x64.ActiveCfg = Debug|x64
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Debug|x64.Build.0 = Debug|x64
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Debug|x86.ActiveCfg = Debug|Win32
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Debug|x86.Build.0 = Debug|Win32
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Release|x64.ActiveCfg = Release|x64
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Release|x64.Build.0 = Release|x64
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Release|x86.ActiveCfg = Release|Win32
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BE25B060-53F2-410D-8602-364589841833} = {BA16B7C4-3041-454D-9727-BE2BED8433F3}
+		{24FAEC5C-5E93-4A50-95C2-85E822DBFD34} = {08FDE26E-7220-48CF-A198-7FCE2700AD9F}
 		{6E9CF710-E9EB-4769-9F66-7BE230EAD8EA} = {344CFDC6-F834-42A9-9007-1A7F17E36AFD}
 		{BA16B7C4-3041-454D-9727-BE2BED8433F3} = {6E9CF710-E9EB-4769-9F66-7BE230EAD8EA}
+		{08FDE26E-7220-48CF-A198-7FCE2700AD9F} = {6E9CF710-E9EB-4769-9F66-7BE230EAD8EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D934B50E-3342-428D-9BCB-EF781351AC0E}
