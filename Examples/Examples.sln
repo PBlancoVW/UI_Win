@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example01_Hello", "Examples\Example01\Example01.vcxproj", "{BE25B060-53F2-410D-8602-364589841833}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hello", "Examples\Books\ProgrammingWindowsWithMFC\Chapter1\Example1\Example1.vcxproj", "{BE25B060-53F2-410D-8602-364589841833}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{344CFDC6-F834-42A9-9007-1A7F17E36AFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammingWindowsWithMFC", "ProgrammingWindowsWithMFC", "{6E9CF710-E9EB-4769-9F66-7BE230EAD8EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter1", "Chapter1", "{BA16B7C4-3041-454D-9727-BE2BED8433F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE25B060-53F2-410D-8602-364589841833} = {BA16B7C4-3041-454D-9727-BE2BED8433F3}
+		{6E9CF710-E9EB-4769-9F66-7BE230EAD8EA} = {344CFDC6-F834-42A9-9007-1A7F17E36AFD}
+		{BA16B7C4-3041-454D-9727-BE2BED8433F3} = {6E9CF710-E9EB-4769-9F66-7BE230EAD8EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D934B50E-3342-428D-9BCB-EF781351AC0E}
