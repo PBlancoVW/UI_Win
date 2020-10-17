@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{BE25B060-53F2-410D-8602-364589841833}</ProjectGuid>
-    <RootNamespace>Example1</RootNamespace>
+    <RootNamespace>Hello</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <ProjectName>Hello</ProjectName>
   </PropertyGroup>
