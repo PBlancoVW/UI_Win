@@ -4,7 +4,6 @@
 #include "pch.h"
 #include "HelloDlg.h"
 #include "afxdialogex.h"
-#include "resource.h"
 
 
 // CHelloDlg dialog

@@ -56,8 +56,9 @@ void CWindow::AddMenus()
 			VERIFY(pDialogsMenu->CreatePopupMenu());
 			VERIFY(pMenu->AppendMenu(MF_POPUP, (UINT_PTR)pDialogsMenu->m_hMenu, _T("&Dialogs")));
 
-			VERIFY(pDialogsMenu->AppendMenu(MF_STRING, MenuID::DialogSimple, _T("&Simple Dialog")));
-			VERIFY(pDialogsMenu->AppendMenu(MF_STRING, MenuID::DialogFromTemplate, _T("&Dialog from template")));
+			VERIFY(pDialogsMenu->AppendMenu(MF_STRING, MenuID::Dialogs_CDialogModal, _T("&Dialog as &modal")));
+			VERIFY(pDialogsMenu->AppendMenu(MF_STRING, MenuID::Dialogs_CDialogModeless, _T("CDialog as mode&less")));
+			VERIFY(pDialogsMenu->AppendMenu(MF_STRING, MenuID::DialogFromTemplate, _T("Dialog from &template")));
 		}
 
 		// Help menu
@@ -91,10 +92,18 @@ LRESULT CWindow::DefWindowProc(UINT nMsg, WPARAM wParam, LPARAM lParam)
 					MessageBox("Hit", "Help");
 					break;
 				}
-				case MenuID::DialogSimple:
+				case MenuID::Dialogs_CDialogModal:
 				{
 					CHelloDlg helloDlg;
 					helloDlg.DoModal();
+					break;
+				}
+				case MenuID::Dialogs_CDialogModeless:
+				{
+					static CHelloDlg helloDlg2;
+					if (helloDlg2.GetSafeHwnd() == NULL)
+						helloDlg2.Create(IDD_DIALOG_HELLO, this);
+					helloDlg2.ShowWindow(SW_SHOW);
 					break;
 				}
 				case MenuID::DialogFromTemplate:

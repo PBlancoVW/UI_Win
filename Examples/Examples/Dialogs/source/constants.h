@@ -8,7 +8,8 @@ enum MenuID : UINT
 	NewProject,
 	NewFile,
 	Dialogs,
-	DialogSimple,
+	Dialogs_CDialogModal,
+	Dialogs_CDialogModeless,
 	DialogFromTemplate,
 	Help,
 	Exit

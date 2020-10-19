@@ -7,3 +7,5 @@
 #include <string>
 #include <map>
 
+#include "resource.h"
+
